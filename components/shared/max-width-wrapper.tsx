@@ -5,8 +5,11 @@ export default function MaxWidthWrapper({
   children,
 }: IMaxWidthWrapper) {
   return (
-    <div className={cn("max-w-7xl mx-auto px-5 md:px-10", className)}>
-      {children}
+    <div className={cn("mx-auto max-w-8xl", className)}>
+      {/* Inner constrained column that actually limits the width */}
+      <div className="">
+        {children}
+      </div>
     </div>
   );
 }
