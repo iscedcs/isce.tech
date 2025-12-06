@@ -1,6 +1,6 @@
 export default function Future() {
   return (
-    <section className=" w-full bg-[#07101D] text-white">
+    <section className=" w-full bg-[#07101D] text-white overflow-hidden">
       {/* TOP BADGE */}
 
       <div className="max-w-7xl mx-auto">
@@ -27,8 +27,8 @@ export default function Future() {
             <path
               d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
               stroke="#274058"
-              stroke-opacity="0.24"
-              stroke-width="3"
+              strokeOpacity="0.24"
+              strokeWidth="3"
             />
           </svg>
 
@@ -41,7 +41,7 @@ export default function Future() {
             <path
               d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
               stroke="#274058"
-              stroke-opacity="0.24"
+              strokeOpacity="0.24"
               stroke-width="3"
             />
           </svg>
@@ -65,7 +65,7 @@ export default function Future() {
           <path
             d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
             stroke="#274058"
-            stroke-opacity="0.24"
+            strokeOpacity="0.24"
             stroke-width="3"
           />
         </svg>
@@ -78,7 +78,7 @@ export default function Future() {
           <path
             d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
             stroke="#274058"
-            stroke-opacity="0.24"
+            strokeOpacity="0.24"
             stroke-width="3"
           />
         </svg>
@@ -173,10 +173,10 @@ export default function Future() {
 
           {/* TEXT RIGHT */}
           <div className="text-center sm:text-left w-full sm:w-1/2 order-1 sm:order-2 sm:mt-0  py-2 sm:py-0 md:px-10 ">
-            <h2 className="text-3xl sm:text-[15px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-bold mt-5">
+            <h2 className="text-3xl sm:text-[15px] md:text-[20px] lg:text-[30px] xl:text-[40px] font-bold mt-5">
               Path to Digital
             </h2>
-            <p className="text-2xl sm:text-[15px] md:text-[20px] lg:text-[30px] xl:text-[60px]">Excellence</p>
+            <p className="text-2xl sm:text-[15px] md:text-[20px] lg:text-[30px] xl:text-[40px]">Excellence</p>
 
             <p className="text-gray-300 mt-3 text-[15px] sm:text-[10px] lg:text-[15px] xl:text-[25px]text-center sm:text-left">
               We seek to improve the standard of modern living<br/> by innovating

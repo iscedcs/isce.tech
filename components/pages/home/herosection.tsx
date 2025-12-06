@@ -1,19 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import OrbitAnimation from "@/components/orbitanimation";
-
-// FINAL MOBILE-ACCURATE VERSION (EXACT LIKE YOUR SCREENSHOT — **NO IMAGE ON MOBILE**)
-// Mobile: text only
-// Tablet/Desktop: image + floating icons appear
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 
 export default function HeroSection() {
   return (
     <section
-      className=" hero-grid w-full bg-[#020d1d]  text-white py-3
-     px-[7%] overflow-hidden relative pb-10"
+    className=" hero-grid w-full bg-[#020d1d]  text-white py-3
+    overflow-hidden relative pb-10"
     >
+      <MaxWidthWrapper>
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1c1c1c_1px,transparent_1px),linear-gradient(to_bottom,#1d1d1d_1px,transparent_1px)] bg-[size:30px_30px]"></div>
-      <div className="max-w-7xl mx-auto grid items-center relative sm:grid-cols-2 gap-14 ">
+      <div className="grid items-center relative sm:grid-cols-2 gap-14 ">
         {/* LEFT SIDE — ALWAYS VISIBLE */}
         <div className="z-20">
           <div className="inline-flex items-center gap-2 px-3 py-2 sm:py-1 sm:px-2 md:px-3 border border-[#404040] rounded-full text-[12px] sm:text-[9px] md:text-[12px] mb-4">
@@ -78,8 +76,8 @@ export default function HeroSection() {
         <div className="relative hidden sm:flex  justify-center items-center pt-10">
           <img
             src="/images/orbitanimation.svg"
-            width="1000px"
-            height="1000px"
+            width="100px"
+            height="100px"
             className="absolute w-800 h-400 -mr-20 -mb-80 z-20 md:-mr-45 md:-mb-95 lg:-mr-70 lg:-mb-120  xl:-mr-80 xl:-mb-140"
           />
           <div className="absolute sm:w-20 sm:h-20 md:w-40 md:h-40 lg:w-70 lg:h-70 rounded-full glow-orb blur-2xl"></div>
@@ -111,7 +109,7 @@ export default function HeroSection() {
             className="
     absolute
     top-[20%] md:top-[30%] right-[1%] md:right-1
-    sm:w-10 md:w-14 lg:w-16
+    sm:w-10 md:w-14 lg:
   "
           />
 
@@ -137,6 +135,7 @@ export default function HeroSection() {
 
       {/* MOBILE CENTER GLOW */}
       <div className="sm:hidden absolute left-1/2 top-1/6 -translate-x-1/2 w-72 h-72 rounded-full bg-blue-600/30 blur-2xl"></div>
+    </MaxWidthWrapper>
     </section>
   );
 }

@@ -2,7 +2,8 @@ import { testimonials } from "@/lib/const";
 
 export default function Feedback() {
   return (
-    <section className="w-full bg-[#EBE8E1] py-8 text-[#1A1A1A]">
+    <section className="w-full bg-[#EBE8E1] py-8 text-[#1A1A1A] overflow-hidden
+    ">
       <div className="mx-auto max-w-7xl">
         {/* TITLE */}
         <div className="px-4 md:px-20 text-center">

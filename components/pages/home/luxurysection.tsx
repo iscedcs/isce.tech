@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function LuxurySection() {
   return (
-    <section className="w-full bg-[#05080f] text-white py-20 px-[8%]">
+    <section className="w-full bg-[#05080f] text-white py-20 px-[8%] overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
         {/* Badge */}
         <div className="inline-block px-4 py-1 rounded-full border-2 border-[#404040] text-xs lg:text-[15px] mb-6">

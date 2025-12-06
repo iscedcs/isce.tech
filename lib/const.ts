@@ -398,34 +398,3 @@ export const statsData = [
     icon: "/images/Ellipse 25.svg",
   },
 ];
-// products.ts
-export const products = [
-  {
-    id: 1,
-    title: "Classic Digital Business Card",
-    desc: "Premium NFC business card with instant contact sharing. Tap to share...",
-    price: 32.99,
-    rating: 4.8,
-    image: "/images/card-placeholder.png", 
-    trending: true,
-  },
-  {
-    id: 2,
-    title: "IISCE Stickers",
-    desc: "Premium NFC business card with instant contact sharing. Tap to share...",
-    price: 32.99,
-    rating: 4.8,
-    image: "/images/sticker-placeholder.png",
-    trending: true,
-  },
-  {
-    id: 3,
-    title: "NFC Smart Watch",
-    desc: "Premium NFC business card with instant contact sharing. Tap to share...",
-    price: 32.99,
-    rating: 4.8,
-    image: "/images/watch-placeholder.png",
-    trending: true,
-  },
-];
-

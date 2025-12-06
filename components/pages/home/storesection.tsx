@@ -16,11 +16,11 @@ export default function StoreSection() {
           {/* "See more" Button */}
           <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4">
             
-            <Link href="/store/register"
+            <button
               className="bg-[#1A1A1A] border border-[#D9D9D9] text-white text-[10px] sm:text-xs md:text-sm px-3 sm:px-4 py-2 rounded-md hover:bg-[#2A2A2A] transition"
             >
               See more
-            </Link>
+            </button>
           </div>
         </div>
       </div>

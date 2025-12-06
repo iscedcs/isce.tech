@@ -94,7 +94,7 @@ export default function NavComponent() {
   return (
     <div>
       <header className="w-full font-sans">
-        <div className="max-w-7xl mx-auto w-full bg-white text-[#333] text-sm hidden sm:flex justify-between items-center px-16 py-3 md:px-32 lg:px-48">
+        <div className=" mx-auto w-full bg-white text-[#333] text-sm hidden sm:flex justify-between items-center px-16 py-3 md:px-32 lg:px-48">
           <div className="flex items-center gap-2">
             <FontAwesomeIcon
               icon={faEnvelopeOpen}
@@ -143,9 +143,9 @@ export default function NavComponent() {
           <div
             className="max-w-7xl mx-auto flex items-center justify-between 
       px-4 py-4 
-      sm:px-5 sm:py-5 
+     
       md:px-12 md:py-5 
-      lg:px-20"
+     "
           >
             {/* LEFT SIDE */}
             <div className="flex items-center text-[12px] tracking-wide">

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function BlogSection({ showButton = true }) {
   return (
-    <div className="bg-[#F2f2F7] w-full py-12">
+    <div className="bg-[#F2f2F7] w-full py-12 overflow-hidden">
       {/* BLOG SECTION */}
       <div className="mx-auto max-w-7xl" >
         <div >
