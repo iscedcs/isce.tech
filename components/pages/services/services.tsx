@@ -4,23 +4,26 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { allServices } from "@/lib/const";
 import ReactMarkdown from "react-markdown";
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 
 export default function ServicesSection() {
   return (
-    <section >
-      <div className="w-full bg-[#07111F] py-24 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto text-center text-[#D9D9D9]">
-          <h2 className="text-4xl md:text-5xl  mb-4 font-semibold">
-            ISCE <span className=" font-normal">Services</span>
-          </h2>
+    <section>
+      <div className="bg-[#07111F] py-24 px-6 md:px-12">
+        <MaxWidthWrapper>
+          <div className="text-center text-[#D9D9D9]">
+            <h2 className="text-4xl md:text-5xl  mb-4 font-semibold">
+              ISCE <span className=" font-normal">Services</span>
+            </h2>
 
-          <p className=" text-[19px] md:text-base leading-relaxed max-w-2xl mx-auto">
-            Local expertise with a global mindset to serve clients worldwide
-          </p>
-        </div>
+            <p className=" text-[19px] md:text-base leading-relaxed max-w-2xl mx-auto">
+              Local expertise with a global mindset to serve clients worldwide
+            </p>
+          </div>
+        </MaxWidthWrapper>
       </div>
       <div className="w-full bg-[#F2F2F7]">
-        <div className="max-w-7xl mx-auto">
+        <MaxWidthWrapper>
           {allServices.map((service, index) => {
             const isReversed = index % 2 === 1; // alternate layout
 
@@ -50,10 +53,14 @@ export default function ServicesSection() {
 
                 {/* TEXT */}
                 <div className="md:w-1/2 ">
-                  <div className="bg-white p-5 shadow-md rounded-sm z-10 mt-[-110] sm:mt-[-30] md:mt-[-28] lg:mt-[-100] sm:max-w-none sm:mx-[-10] sm:p-0 sm:bg-transparent sm:justify-center sm:shadow-none lg:mx-[-30px] xl:mt-[-120px]">
+                  <div className="bg-white p-5 shadow-md rounded-sm z-10 mt-[-110] sm:mt-[-30] md:mt-[-28] lg:mt-[-100] sm:max-w-none sm:mx-[-10] sm:p-0 sm:bg-transparent sm:justify-center sm:shadow-none lg:mx-[-30px]">
                     {/* ICON */}
                     <div className="xl:w-15 xl:h-15 lg:w-10 lg:h-10 sm:w-5 sm:h-5 rounded-xl flex items-center mb-2">
-                      <img src="/images/circle.svg" alt="Service Icon" className="hidden sm:block"/>
+                      <img
+                        src="/images/circle.svg"
+                        alt="Service Icon"
+                        className="hidden sm:block"
+                      />
                     </div>
 
                     {/* TITLE */}
@@ -98,9 +105,6 @@ export default function ServicesSection() {
                             {tech}
                           </span>
                         ))}
-
-
-
                       </div>
                     </div>
                   </div>
@@ -108,7 +112,7 @@ export default function ServicesSection() {
               </motion.div>
             );
           })}
-        </div>
+        </MaxWidthWrapper>
       </div>
     </section>
   );

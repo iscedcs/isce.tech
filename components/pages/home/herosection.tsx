@@ -6,7 +6,8 @@ import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 export default function HeroSection() {
   return (
     <section
-    className=" hero-grid w-full bg-[#020d1d]  text-white py-3
+    id="hero"
+    className=" hero-grid bg-[#020d1d]  text-white py-3
     overflow-hidden relative pb-10"
     >
       <MaxWidthWrapper>
@@ -94,10 +95,10 @@ export default function HeroSection() {
           </div>
 
           {/* FLOATING ICONS */}
-          {/* FLOATING ICONS — RESPONSIVE */}
+
           <img
             src="/images/rocket.svg"
-            className="
+            className="animate-float
     absolute 
     top-[15%] sm:left-[1%] md:left-[2%]
     sm:w-10 md:w-14 lg:w-16
@@ -106,16 +107,16 @@ export default function HeroSection() {
 
           <img
             src="/images/bolt.svg"
-            className="
+            className="animate-float
     absolute
     top-[20%] md:top-[30%] right-[1%] md:right-1
-    sm:w-10 md:w-14 lg:
+    sm:w-10 md:w-14 lg:w-16
   "
           />
 
           <img
             src="/images/target.svg"
-            className="
+            className="animate-float
     absolute
     bottom-[3%] left-[5%] md:left-[2%]
     w-10 md:w-14 lg:w-16
@@ -124,7 +125,7 @@ export default function HeroSection() {
 
           <img
             src="/images/diamond.svg"
-            className="
+            className="animate-float
     absolute
     bottom-[10%] right-[1%]
     w-10 md:w-14 lg:w-16

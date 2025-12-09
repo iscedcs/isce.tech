@@ -92,9 +92,9 @@ export default function NavComponent() {
   }
 
   return (
-    <div>
-      <header className="w-full font-sans">
-        <div className=" mx-auto w-full bg-white text-[#333] text-sm hidden sm:flex justify-between items-center px-16 py-3 md:px-32 lg:px-48">
+    <header className="font-sans bg-white">
+      <MaxWidthWrapper>
+        <div className="text-[#333] text-sm hidden sm:flex justify-between items-center px-16 py-3 md:px-32 lg:px-48">
           <div className="flex items-center gap-2">
             <FontAwesomeIcon
               icon={faEnvelopeOpen}
@@ -139,14 +139,10 @@ export default function NavComponent() {
             </div>
           </div>
         </div>
-        <nav className="navbar w-full bg-gradient-to-r from-[#0E1622] to-[#0B111A] text-white shadow-lg">
-          <div
-            className="max-w-7xl mx-auto flex items-center justify-between 
-      px-4 py-4 
-     
-      md:px-12 md:py-5 
-     "
-          >
+      </MaxWidthWrapper>
+      <nav className="navbar w-full bg-gradient-to-r from-[#0E1622] to-[#0B111A] text-white shadow-lg">
+        <MaxWidthWrapper>
+          <div className="flex items-center justify-between py-4 md:py-5">
             {/* LEFT SIDE */}
             <div className="flex items-center text-[12px] tracking-wide">
               {/* Desktop: ISCE */}
@@ -175,7 +171,7 @@ export default function NavComponent() {
                 { name: "Services", path: "/services" },
                 { name: "Blog", path: "/blog" },
                 { name: "About", path: "/about" },
-                { name: "Contact", path: "/contact" },
+                { name: "Contact", path: "/contact#contact" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -210,7 +206,7 @@ export default function NavComponent() {
             </ul>
 
             {/* MOBILE HAMBURGER */}
-            
+
             <button className="sm:hidden" onClick={() => setOpen(true)}>
               <Menu size={32} />
             </button>
@@ -254,8 +250,8 @@ export default function NavComponent() {
               </Link>
             </div>
           )}
-        </nav>
-      </header>
-    </div>
+        </MaxWidthWrapper>
+      </nav>
+    </header>
   );
 }

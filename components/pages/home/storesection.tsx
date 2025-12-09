@@ -1,11 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 
 export default function StoreSection() {
   return (
-    <section className="w-full bg-[#FFFFFF] py-[4%]">
-      <div className="max-w-8xl mx-auto px-[4%]">
+    <section className="bg-[#FFFFFF] py-[4%]">
+      <MaxWidthWrapper>
+      <div className="px-[4%]">
         {/* Title */}
         <h2 className="text-center text-2xl md:text-3xl font-semibold tracking-wide text-black mb-10">
           STORE
@@ -24,6 +26,7 @@ export default function StoreSection() {
           </div>
         </div>
       </div>
+      </MaxWidthWrapper>
     </section>
   );
 }

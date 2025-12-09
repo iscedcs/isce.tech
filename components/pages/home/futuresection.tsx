@@ -1,9 +1,10 @@
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+
 export default function Future() {
   return (
-    <section className=" w-full bg-[#07101D] text-white overflow-hidden">
+    <section className="bg-[#07101D] text-white overflow-hidden">
       {/* TOP BADGE */}
-
-      <div className="max-w-7xl mx-auto">
+      <MaxWidthWrapper>
         <div className="flex justify-center pt-10">
           <div className="px-3 py-2 rounded-full border-2 border-[#404040]  text-xs xl:text-[18px] flex items-center gap-2 bg-gradient-to-r from-[#231942] to-[#7F3FBF] via-[#3842D1] bg-clip-text text-transparent">
             <span className="flex items-center justify-center w-2 h-2 xl:w-3 xl:h-3 ">
@@ -34,7 +35,7 @@ export default function Future() {
 
           <svg
             viewBox="0 0 1580 210"
-            fill="none" 
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="hidden 2xl:hidden sm:block w-full h-auto absolute -mt-16 lg:-mt-20 xl:-mt-27 z-0 px-4 pl-8 md:px-10 md:pl-24 xl:px-20"
           >
@@ -42,7 +43,7 @@ export default function Future() {
               d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
               stroke="#274058"
               strokeOpacity="0.24"
-              stroke-width="3"
+              strokeWidth="3"
             />
           </svg>
 
@@ -66,7 +67,7 @@ export default function Future() {
             d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
             stroke="#274058"
             strokeOpacity="0.24"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </svg>
         <svg
@@ -79,28 +80,27 @@ export default function Future() {
             d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
             stroke="#274058"
             strokeOpacity="0.24"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </svg>
 
         <svg
-            width="600"
-            height="2"
-            viewBox="0 0 1488 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="hidden sm:block absolute mt-25 lg:mt-28 z-0 px-4 pl-10 md:pl-24 lg:ml-40"
-
-          >
-            <line
-              x1="8.74228e-08"
-              y1="1"
-              x2="1488"
-              y2="1.00013"
-              stroke="#15415A"
-              stroke-width="2"
-            />
-          </svg>
+          width="600"
+          height="2"
+          viewBox="0 0 1488 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="hidden sm:block absolute mt-25 lg:mt-28 z-0 px-4 pl-10 md:pl-24 lg:ml-40 xl:w-[900px]j"
+        >
+          <line
+            x1="8.74228e-08"
+            y1="1"
+            x2="1488"
+            y2="1.00013"
+            stroke="#15415A"
+            strokeWidth="2"
+          />
+        </svg>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-4 gap-4 px-4 sm:mx-6 md:px-18">
           <svg
@@ -117,10 +117,10 @@ export default function Future() {
               x2="1.00004"
               y2="-4.37113e-08"
               stroke="#15415A"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </svg>
-          
+
           {[
             {
               num: "01",
@@ -159,7 +159,6 @@ export default function Future() {
             </div>
           ))}
         </div>
-
         {/* IMAGE + TEXT SECTION */}
         <div className="mt-16 flex flex-col gap-10 md:gap-0 sm:flex-row items-stretch bg-gradient-to-r from-[#0E1622] to-[#0B111A]">
           {/* IMAGE LEFT (mobile goes bottom) */}
@@ -176,11 +175,13 @@ export default function Future() {
             <h2 className="text-3xl sm:text-[15px] md:text-[20px] lg:text-[30px] xl:text-[40px] font-bold mt-5">
               Path to Digital
             </h2>
-            <p className="text-2xl sm:text-[15px] md:text-[20px] lg:text-[30px] xl:text-[40px]">Excellence</p>
+            <p className="text-2xl sm:text-[15px] md:text-[20px] lg:text-[30px] xl:text-[40px]">
+              Excellence
+            </p>
 
             <p className="text-gray-300 mt-3 text-[15px] sm:text-[10px] lg:text-[15px] xl:text-[25px]text-center sm:text-left">
-              We seek to improve the standard of modern living<br/> by innovating
-              digital solutions to make life easier.
+              We seek to improve the standard of modern living
+              <br /> by innovating digital solutions to make life easier.
             </p>
 
             {/* STATS */}
@@ -191,10 +192,12 @@ export default function Future() {
                     src="/images/Ellipse 25.svg"
                     className="absolute w-20 h-20  sm:w-15 sm:h-15 md:h-19 md:w-19 lg:h-25 lg:w-25"
                   />
-                  93% 
+                  93%
                 </div>
-                <p className="text-[14px] sm:text-[10px] md:text-[11
-                'px] lg:text-[15px] text-white mt-3 text-center sm:text-left">
+                <p
+                  className="text-[14px] sm:text-[10px] md:text-[11
+                'px] lg:text-[15px] text-white mt-3 text-center sm:text-left"
+                >
                   Business Growth
                 </p>
               </div>
@@ -214,7 +217,7 @@ export default function Future() {
             </div>
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 }

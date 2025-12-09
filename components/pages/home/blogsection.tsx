@@ -1,3 +1,4 @@
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import { blog } from "@/lib/const";
 import Link from "next/link";
 
@@ -5,10 +6,10 @@ export default function BlogSection({ showButton = true }) {
   return (
     <div className="bg-[#F2f2F7] w-full py-12 overflow-hidden">
       {/* BLOG SECTION */}
-      <div className="mx-auto max-w-7xl" >
-        <div >
+      <MaxWidthWrapper>
+        <div>
           {/* Top Bar */}
-          <div className="mx-auto max-w-6xl flex justify-between items-center">
+          <div className="flex justify-between items-center">
             <div className="mb-8">
               <p className="text-[15px] sm:text-sm tracking-wider text-[#000000] flex flex-row gap-3">
                 <span className="flex  items-center h-[0.5px] sm:h-[1%] justify-center">
@@ -64,7 +65,6 @@ export default function BlogSection({ showButton = true }) {
                       {/* Button row */}
                       <div className="absolute left-5 top-110 flex justify-start items-center">
                         <Link href={`/blog/${item.id}`}>
-
                           <button
                             aria-label="read more"
                             className="w-8 h-8 rounded-full border border-[#8C8C8C] bg-white flex items-center justify-center text-[#000000] hover:bg-gray-100 shadow-sm"
@@ -126,7 +126,7 @@ export default function BlogSection({ showButton = true }) {
             </div>
           )}
         </div>
-      </div>
+      </MaxWidthWrapper>
     </div>
   );
 }

@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 
 export default function LuxurySection() {
   return (
-    <section className="w-full bg-[#05080f] text-white py-20 px-[8%] overflow-hidden">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="bg-[#05080f] text-white py-20 px-[8%] overflow-hidden">
+      <MaxWidthWrapper>
+      <div className="text-center">
         {/* Badge */}
         <div className="inline-block px-4 py-1 rounded-full border-2 border-[#404040] text-xs lg:text-[15px] mb-6">
           <h1 className="bg-gradient-to-r from-[#231942] to-[#7F3FBF] via-[#3842D1] bg-clip-text text-transparent">
@@ -99,6 +101,7 @@ export default function LuxurySection() {
           </div>
         </div>
       </div>
+      </MaxWidthWrapper>
     </section>
   );
 }

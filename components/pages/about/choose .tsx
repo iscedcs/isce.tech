@@ -1,3 +1,4 @@
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import React from "react";
 
 export default function WhyChooseISCE() {
@@ -33,9 +34,9 @@ export default function WhyChooseISCE() {
   ];
 
   return (
-    <section className="w-full bg-[#E8E5DF] py-7 xl:py-16 px-2 md:px-10 relative overflow-hidden">
+    <section className=" bg-[#E8E5DF] py-7 xl:py-16 px-2 md:px-10 relative overflow-hidden">
       {/* background curved lines */}
-      <div className="max-w-7xl mx-auto">
+      <MaxWidthWrapper>
         <div className="absolute left-0 top-0 w-72 h-72 border-[1.5px] border-[#d6d3cc] rounded-full opacity-40 -translate-x-16 -translate-y-10"></div>
         <div className="absolute left-0 top-0 w-96 h-96 border-[1.5px] border-[#d6d3cc] rounded-full opacity-30 -translate-x-32 -translate-y-20"></div>
 
@@ -87,7 +88,7 @@ export default function WhyChooseISCE() {
           }
         `}
         </style>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 }

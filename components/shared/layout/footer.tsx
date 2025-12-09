@@ -5,13 +5,15 @@ import {
   faLinkedinIn,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import MaxWidthWrapper from "../max-width-wrapper";
 import React from "react";
+import MaxWidthWrapper from "../max-width-wrapper";
+import Link from "next/link";
 export default function FooterComponent() {
   return (
     <footer className="bg-[#000000] text-white w-full">
+      <MaxWidthWrapper>
       {/* Top Section */}
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative">
         <div className="justify-between">
           <div className="text-center py-16">
             <h2 className="text-[35px] font-light">
@@ -199,12 +201,14 @@ export default function FooterComponent() {
           {/* Bottom Bar */}
           {/* Bottom Bar */}
           <div className="justify-between py-6 pb-5  bg-black sm:bg-[#1B1E23] text-xs text-gray-400 border-t border-[#404040] max-w-8xl mx-auto w-full">
+            <Link href="/#hero">
             <div className="hidden sm:block items-center justify-center relative z-10 rounded-full w-5 h-5  lg:w-8 lg:h-8 mt-[-32] md:mt-[-34] lg:mt-[-38] bg-[#0065BF]  ml-[50%] border border-[#D9EDFF]">
               <img
                 src="/images/inverted.svg"
                 className="absolute top-[30%] left-[30%] w-2 h-2 lg:w-3 lg:h-3"
               />
             </div>
+            </Link>
             {/* inner wrapper: w-full on small screens so the three flex-1 children can fill the bar */}
             <div className="flex flex-row justify-center sm:justify-between items-center">
               <div className="relative flex w-full sm:w-auto gap-3 sm:text-[8px] md:text-[10px] lg:text-[12px] xl:text-[15px] mb-3 sm:mb-0 px-0">
@@ -261,6 +265,7 @@ export default function FooterComponent() {
           </p>
         </div>
       </div>
+      </MaxWidthWrapper>
     </footer>
   );
 }
