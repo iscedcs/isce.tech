@@ -15,38 +15,38 @@ export default function Future() {
         </div>
 
         {/* TITLE */}
-        <div className="text-center mt-4">
+        <div className="relative text-center mt-4">
           <h2 className="text-[38px] sm:text-4xl lg:text-[40px] xl:text-[50px] text-[#8C8C8C] font-semibold mb-0.5 z-15">
             Step Into
           </h2>
-          <svg
-            viewBox="0 0 440 75"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="sm:hidden absolute w-full h-auto -mt-18 z-0"
-          >
-            <path
-              d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
-              stroke="#274058"
-              strokeOpacity="0.24"
-              strokeWidth="3"
-            />
-          </svg>
-
-          <svg
-            viewBox="0 0 1580 210"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="hidden 2xl:hidden sm:block w-full h-auto absolute -mt-16 lg:-mt-20 xl:-mt-27 z-0 px-4 pl-8 md:px-10 md:pl-24 xl:px-20"
-          >
-            <path
-              d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
-              stroke="#274058"
-              strokeOpacity="0.24"
-              strokeWidth="3"
-            />
-          </svg>
-
+          <div className="sm:hidden absolute w-full h-auto z-0">
+            <svg
+              viewBox="0 0 440 75"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
+                stroke="#274058"
+                strokeOpacity="0.24"
+                strokeWidth="3"
+              />
+            </svg>
+          </div>
+          <div className="hidden 2xl:hidden sm:block w-full h-auto absolute -mt-16 lg:-mt-20 xl:-mt-27 z-0 px-4 pl-8 md:px-10 md:pl-24 xl:px-20">
+            <svg
+              viewBox="0 0 1580 210"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
+                stroke="#274058"
+                strokeOpacity="0.24"
+                strokeWidth="3"
+              />
+            </svg>
+          </div>
           <h2 className="text-[38px] sm:text-4xl lg:text-[40px] xl:text-[50px] font-semibold text-[#0086FF]">
             The Future
           </h2>
@@ -56,71 +56,71 @@ export default function Future() {
         </div>
 
         {/* STEPS GRID */}
-
-        <svg
-          viewBox="0 0 440 75"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="sm:hidden absolute w-full h-auto mt-20 z-0"
-        >
-          <path
-            d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
-            stroke="#274058"
-            strokeOpacity="0.24"
-            strokeWidth="3"
-          />
-        </svg>
-        <svg
-          viewBox="0 0 1580 210"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="hidden 2xl:hidden sm:block w-full h-auto absolute -mt-4 lg:-mt-9 xl:-mt-13 z-0 px-4 pl-8 md:px-10 md:pl-24 xl:px-20 xl:pl-26"
-        >
-          <path
-            d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
-            stroke="#274058"
-            strokeOpacity="0.24"
-            strokeWidth="3"
-          />
-        </svg>
-
-        <svg
-          width="600"
-          height="2"
-          viewBox="0 0 1488 2"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="hidden sm:block absolute mt-25 lg:mt-28 z-0 px-4 pl-10 md:pl-24 lg:ml-40 xl:w-[900px]j"
-        >
-          <line
-            x1="8.74228e-08"
-            y1="1"
-            x2="1488"
-            y2="1.00013"
-            stroke="#15415A"
-            strokeWidth="2"
-          />
-        </svg>
-
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-4 gap-4 px-4 sm:mx-6 md:px-18">
+        <div className="sm:hidden absolute w-full h-auto mt-20 z-0">
           <svg
-            width="2"
-            height="645"
-            viewBox="0 0 2 924"
+            viewBox="0 0 440 75"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="block sm:hidden absolute left-1/2 "
+          >
+            <path
+              d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
+              stroke="#274058"
+              strokeOpacity="0.24"
+              strokeWidth="3"
+            />
+          </svg>
+        </div>
+        <div className="hidden 2xl:hidden sm:block w-full h-auto relative overflow-hidden -mt-4 lg:-mt-9 xl:-mt-13 z-0 px-4 pl-8 md:px-10 md:pl-24 xl:px-20 xl:pl-26">
+          <svg
+            viewBox="0 0 1580 210"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
+              stroke="#274058"
+              strokeOpacity="0.24"
+              strokeWidth="3"
+            />
+          </svg>
+        </div>
+        <div className="hidden sm:block absolute mt-25 lg:mt-33 z-0 px-4 pl-10 md:pl-24 lg:ml-60 xl:w-[100px]">
+          <svg
+            width="600"
+            height="2"
+            viewBox="0 0 1488 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <line
-              x1="1"
-              y1="924"
-              x2="1.00004"
-              y2="-4.37113e-08"
+              x1="8.74228e-08"
+              y1="1"
+              x2="1488"
+              y2="1.00013"
               stroke="#15415A"
               strokeWidth="2"
             />
           </svg>
-
+        </div>
+        <div className="relative overflow-hidden mt-10 grid grid-cols-1 sm:grid-cols-4 gap-4 px-4 sm:mx-6 md:px-18">
+          <div className="block sm:hidden absolute left-1/2">
+            <svg
+              width="2"
+              height="645"
+              viewBox="0 0 2 924"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="1"
+                y1="924"
+                x2="1.00004"
+                y2="-4.37113e-08"
+                stroke="#15415A"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
           {[
             {
               num: "01",

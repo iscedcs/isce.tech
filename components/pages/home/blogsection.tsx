@@ -24,7 +24,7 @@ export default function BlogSection({ showButton = true }) {
 
             {showButton && (
               <Link href="/blog">
-                <button className="block px-4 py-2 bg-gradient-to-r from-[#0086FF] to-[#B0D9FF] text-white text-sm rounded-lg">
+                <button className="block px-4 py-2 bg-gradient-to-r11111111111111111111111111111111111111111111111111111111111111 from-[#0086FF] to-[#B0D9FF] text-white text-sm rounded-lg">
                   View All Blog
                 </button>
               </Link>
