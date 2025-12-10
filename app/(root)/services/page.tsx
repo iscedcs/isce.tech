@@ -1,3 +1,5 @@
+import ServicesSection from "@/components/pages/services/services";
+
 export default function ServicesPage() {
-  return <div>page</div>;
+  return <div><ServicesSection/></div>;
 }

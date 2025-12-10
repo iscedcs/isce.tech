@@ -120,3 +120,50 @@
     @apply bg-background text-foreground;
   }
 }
+.white-fill-outline path {
+  fill: #ffffff;          /* white filling */
+  stroke: #29292b;        /* grey outline */
+  stroke-width: 20;       /* thickness of outline */
+  stroke-linejoin: round;
+}
+.navbar a {
+  text-decoration: none !important;
+}
+/* HERO SECTION UTILITIES */
+.hero-grid {
+  background-image: radial-gradient(circle at center, rgba(0, 100, 255, 0.15), transparent 60%),
+    url('/grid.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.glow-orb {
+  box-shadow: 0 0 120px 40px rgba(0, 130, 255, 0.5);
+}
+
+.glass-icon {
+  backdrop-filter: blur(8px);
+  background: rgba(15, 22, 36, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(0deg) translateY(-12px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(-12px) rotate(-360deg);
+  }
+}
+.animate-float {
+  animation: float  2s linear infinite; 
+}

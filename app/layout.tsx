@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import NavComponent from "@/components/shared/layout/nav";
 import FooterComponent from "@/components/shared/layout/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
+  weight: ["400"],
 });
-
 export const metadata: Metadata = {
   title: "ISCE Tech",
   description:
@@ -28,8 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NavComponent />
+        className={`${montserrat.variable} antialiased`}>
+        <NavComponent/>
         {children}
         <FooterComponent />
       </body>
