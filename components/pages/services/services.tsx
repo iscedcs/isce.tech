@@ -36,8 +36,7 @@ export default function ServicesSection() {
                 viewport={{ once: true }}
                 className={`flex flex-col sm:flex-row ${
                   !isReversed ? "sm:flex-row-reverse" : ""
-                } sm:items-center gap-10 lg:gap-13 lg:gap-23 px-12  py-10 mx-auto`}
-              >
+                } sm:items-center gap-10 lg:gap-13  px-12  py-10 mx-auto`}>
                 {/* IMAGE — always first on mobile */}
                 <div className="flex justify-center md:w-1/2 ">
                   <div className="rounded-2xl mx-[-20] sm:mx-[-10] lg:mx-[-30px]">
@@ -78,8 +77,7 @@ export default function ServicesSection() {
                       {service.features.map((feature, i) => (
                         <li
                           key={i}
-                          className="flex items-start gap-2 text-[#404040]  text-[11px] sm:text-[6px] md:text-[8px] lg:text-[12px] xl:text-[14px]"
-                        >
+                          className="flex items-start gap-2 text-[#404040]  text-[11px] sm:text-[6px] md:text-[8px] lg:text-[12px] xl:text-[14px]">
                           <img
                             src="/images/check.svg"
                             alt="check icon"
@@ -100,8 +98,7 @@ export default function ServicesSection() {
                         {service.technologies_we_use.map((tech, i) => (
                           <span
                             key={i}
-                            className=" px-2 md:px-3 py-1 xl:px-4 xl:py-2 rounded-full text-[11px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[13px] bg-[#E6F3FF] border border-[#0086FF] text-[#000000]"
-                          >
+                            className=" px-2 md:px-3 py-1 xl:px-4 xl:py-2 rounded-full text-[11px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[13px] bg-[#E6F3FF] border border-[#0086FF] text-[#000000]">
                             {tech}
                           </span>
                         ))}
