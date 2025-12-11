@@ -91,7 +91,7 @@ export default function LuxurySection() {
             />
 
             {/* Play Button */}
-            <button className="absolute inset-0 flex items-center justify-center">
+            <button className="cursor-pointer absolute inset-0 flex items-center justify-center">
               <img
                 src="/images/play.png"
                 alt="Play Button"

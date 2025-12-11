@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { blog } from "@/lib/const";
 import Link from "next/link";
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 
 interface BlogPostProps {
   id: number;
@@ -16,8 +17,9 @@ export default function BlogPost({ id }: BlogPostProps) {
 
   return (
     <section className="w-full flex justify-center bg-[#F2F2F7] py-10 md:py-16">
+      <MaxWidthWrapper>
       <div className="w-full max-w-4xl px-4 md:px-0">
-        {/* ---------- Header Category ---------- */}
+        {/* ---------- Header Category ----------*/}
         <Link href="/blog">
         <div className="flex flex-row gap-3 mb-4 ">
         <img src="/images/arrowleft.svg" className="w-4 h-b" />
@@ -110,6 +112,7 @@ export default function BlogPost({ id }: BlogPostProps) {
           })}
         </article>
       </div>
+      </MaxWidthWrapper>
     </section>
   );
 }

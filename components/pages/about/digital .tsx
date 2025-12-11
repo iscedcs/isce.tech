@@ -5,7 +5,7 @@ import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 export default function Digital() {
   return (
     <section className="bg-gradient-to-r from-[#0E1622] to-[#0B111A] text-white">
-
+      <MaxWidthWrapper>
           {/* Top Section */}
           <div className="flex flex-col sm:flex-row items-stretch bg-gradient-to-r from-[#0E1622] to-[#0B111A]">
             {/* IMAGE LEFT (mobile goes bottom) */}
@@ -59,7 +59,7 @@ export default function Digital() {
             </div>
           </div>
 
-
+      </MaxWidthWrapper>
     </section>
   );
 }

@@ -36,11 +36,11 @@ export default function HeroSection() {
 
           {/* BUTTONS */}
           <div className="flex-wrap gap-5 sm:flex sm:flex-row">
-            <button className="mt-6 bg-gradient-to-r from-[#0086FF] to-[#B0D9FF]  rounded flex items-center gap-1 px-2 h-10 md:px-3 sm:h-6 md:h-8 sm:text-[8px] md:text-[10px] lg:text-[12px]">
+            <button className="mt-6 cursor-pointer bg-gradient-to-r from-[#0086FF] to-[#B0D9FF]  rounded flex items-center gap-1 px-2 h-10 md:px-3 sm:h-6 md:h-8 sm:text-[8px] md:text-[10px] lg:text-[12px]">
               Free Consultation <span>›</span>
             </button>
 
-            <button className="mt-6 bg-gradient-to-r from-[#0086FF] to-[#B0D9FF]  rounded text-sm flex items-center gap-2 px-2  md:px-3 h-10 sm:h-6 md:h-8 sm:text-[8px] md:text-[10px] lg:text-[12px]">
+            <button className="mt-6 cursor-pointer bg-gradient-to-r from-[#0086FF] to-[#B0D9FF]  rounded text-sm flex items-center gap-2 px-2  md:px-3 h-10 sm:h-6 md:h-8 sm:text-[8px] md:text-[10px] lg:text-[12px]">
               <img
                 src="/images/store.svg"
                 className="h-3 w-3 sm:h-2 sm:w-2 md:h-3 md:w-3"

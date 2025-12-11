@@ -36,7 +36,7 @@ export default function ServicesSection() {
                 viewport={{ once: true }}
                 className={`flex flex-col sm:flex-row ${
                   !isReversed ? "sm:flex-row-reverse" : ""
-                } sm:items-center gap-10 lg:gap-13 lg:gap-23 px-12  py-10 mx-auto`}
+                } sm:items-center gap-10 lg:gap-23 px-12  py-10 mx-auto`}
               >
                 {/* IMAGE — always first on mobile */}
                 <div className="flex justify-center md:w-1/2 ">

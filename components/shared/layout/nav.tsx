@@ -113,23 +113,22 @@ export default function NavComponent() {
           </div>
         </div>
 
-        {/* MOBILE SMART STATUS BAR */}
+        {/* MOBILE SMART STATUS BAR
         <div className="sm:hidden w-full bg-white flex justify-between items-center px-4 py-2 text-black text-sm font-medium">
-          {/* TIME */}
+          TIME
           <span>{time}</span>
 
-          {/* Dynamic Island */}
+           Dynamic Island 
           <div className="w-24 h-6 bg-black rounded-full"></div>
 
-          {/* STATUS ICONS */}
+          STATUS ICONS
           <div className="flex items-center gap-2">
-            {/* SIGNAL */}
+             SIGNAL
             <FontAwesomeIcon icon={faSignal} className="text-black text-xs" />
 
-            {/* WIFI ICON */}
+             WIFI ICON 
             <FontAwesomeIcon icon={faWifi} className="text-black text-xs" />
-
-            {/* BATTERY + OPTIONAL PERCENTAGE */}
+ BATTERY + OPTIONAL PERCENTAGE 
             <div className="flex items-center gap-1">
               <FontAwesomeIcon
                 icon={getBatteryIcon()}
@@ -138,7 +137,7 @@ export default function NavComponent() {
               {battery !== null && <span className="text-xs">{battery}%</span>}
             </div>
           </div>
-        </div>
+        </div> */}
       </MaxWidthWrapper>
       <nav className="navbar w-full bg-gradient-to-r from-[#0E1622] to-[#0B111A] text-white shadow-lg">
         <MaxWidthWrapper>
@@ -217,23 +216,21 @@ export default function NavComponent() {
           {open && (
             <div
               className="fixed inset-0 
-    z-50 sm:hidden overflow-y-auto bg-gradient-to-r from-[#0E1622] to-[#0B111A] 
+    z-50 sm:hidden overflow-hidden bg-gradient-to-r from-[#0E1622] to-[#0B111A] 
         p-10 
          flex flex-col gap-4 shadow-xl"
             >
-              <button className="self-end mb-4" onClick={() => setOpen(false)}>
-                <X size={22} />
-              </button>
               {[
-                { name: "Home", path: "/" },
-                { name: "Services", path: "/services" },
-                { name: "Blog", path: "/blog" },
-                { name: "About", path: "/about" },
-                { name: "Contact", path: "/contact" },
+                { name: "Home", path: "/"},
+                { name: "Services", path: "/services"},
+                { name: "Blog", path: "/blog"},
+                { name: "About", path: "/about"},
+                { name: "Contact", path: "/contact#contact"},
               ].map((item) => (
                 <Link
                   key={item.name}
                   href={item.path}
+                  onClick={() => setOpen(false)}
                   className="bg-[#8e9397] text-[#222] py-3 px-4 rounded-md 
               text-[14px] sm:text-[15px] tracking-wide font-medium"
                 >
@@ -243,8 +240,9 @@ export default function NavComponent() {
 
               <Link
                 href="/contact"
+                onClick={() => setOpen(false)}
                 className="bg-blue-600 text-black border border-white text-center py-4 rounded-md 
-            text-[14px] sm:text-[15px] tracking-wide mt-105"
+            text-[14px] sm:text-[15px] tracking-wide mt-60"
               >
                 Get in Touch
               </Link>
