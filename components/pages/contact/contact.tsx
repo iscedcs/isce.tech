@@ -113,7 +113,7 @@ export default function ContactSection() {
                     <p className="sm:text-[12px] md:text-[12px] text-[#333333] font-medium">
                       Phone Number
                     </p>
-                    <p className="text-[#8C8C8C] text-center">############</p>
+                    <p className="text-[#8C8C8C] text-center">0 916 071 5640</p>
                   </div>
                 </div>
 
@@ -134,7 +134,7 @@ export default function ContactSection() {
                       Email Address
                     </p>
                     <p className="text-center sm:text-[8px] md:text-[8px] text-[#8C8C8C]">
-                      ############
+                      hello@isce.tech
                     </p>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function ContactSection() {
                       Whatsapp
                     </p>
                     <p className="text-[#8C8C8C] sm:text-[8px] md:text-[8px] text-center">
-                      ############
+                      +234 916 071 5640
                     </p>
                   </div>
                 </div>
@@ -174,11 +174,11 @@ export default function ContactSection() {
                     className="hidden sm:block w-5 h-5 sm:h-6 sm:w-6 md:w-6 md:h-6"
                   />
                   <div>
-                    <p className="font-medium text-[#333333] sm:text-[12px] md:text-[12px]">
+                    <p className="font-medium sm:text-center text-[#333333] sm:text-[12px] md:text-[12px]">
                       Our Office
                     </p>
-                    <p className="sm:text-[8px] md:text-[8px] text-center text-[#8C8C8C]">
-                      ############
+                    <p className="text-[8px] sm:text-[6px] lg:text-[9px] text-center text-[#8C8C8C]">
+                      Plot 1, Maruwa Bus Stop, 128 Remi Olowude Street, Lekki, Lagos, Nigeria,
                     </p>
                   </div>
                 </div>

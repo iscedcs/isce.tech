@@ -110,7 +110,7 @@ export default function BlogSection({ showButton = true }) {
                     </h3>
 
                     {/* Button row */}
-                    <div className="absolute left-5 top-10 flex justify-start items-center">
+                    <div className="absolute left-5 top-107 flex justify-start items-center">
                       <Link href={`/blog/${item.id}`}>
                         <button
                           aria-label="read more"
