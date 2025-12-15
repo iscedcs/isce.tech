@@ -153,7 +153,11 @@
 }
 
 .animate-scroll {
-  animation: scroll 25s linear infinite;
+  animation: scroll 3s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }
 
 @keyframes float {
@@ -166,4 +170,17 @@
 }
 .animate-float {
   animation: float  2s linear infinite; 
+}
+
+@keyframes stepSlide {
+  0%, 25% { transform: translateX(0); }
+  33%, 58% { transform: translateX(-50%); }
+   }
+ 
+
+
+.carousel-track {
+  display: flex;
+  animation: stepSlide 12s infinite;
+  animation-timing-function: linear; /* smooth transitions */
 }

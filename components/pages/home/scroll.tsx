@@ -1,0 +1,67 @@
+import * as React from "react"
+
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { testimonials } from "@/lib/const"
+
+export function Testimonial() {
+  return (
+   <Carousel className="w-full">
+  <CarouselContent className="-ml-1">
+    {testimonials.map((item, i) => (
+      <CarouselItem key={i} className="pl-1 md:basis-1/2 lg:basis-1/3">
+        <div className="p-1">
+          <Card className="bg-transparent shadow-none border-none">
+            <CardContent className="p-0">
+              <div
+                className="relative bg-gradient-to-r from-[#0E1622] to-[#0B111A]
+                  border border-[#1F2937] rounded-xl pb-10 shadow-sm min-w-[360px]"
+              >
+                {/* Avatar + Review */}
+                <div className="flex items-start gap-4 p-3 py-5">
+                  <div className="w-20 h-20 bg-[#8C8C8C] rounded-full shrink-0"></div>
+
+                  <p className="text-[#D9D9D9] text-[11px] leading-relaxed">
+                    “{item.review}”
+                  </p>
+                </div>
+
+                <div className="absolute left-0 h-px w-80 mx-6 bg-[#D9D9D9] top-[130px]"></div>
+
+                {/* Name + Role + Rating */}
+                <div className="flex justify-between absolute left-6 top-[140px] items-center text-[12px] pl-3 text-white">
+                  <p>
+                    <span className="font-semibold">{item.name}</span>
+                    <span className="text-[#8C8C8C]"> / {item.role}</span>
+                  </p>
+
+                  <div className="flex gap-1 pr-1 absolute -right-30">
+                    {Array(item.rating)
+                      .fill(0)
+                      .map((_, index) => (
+                        <span key={index} className="text-[#325239] text-[12px]">
+                          ★
+                        </span>
+                      ))}
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </CarouselItem>
+    ))}
+  </CarouselContent>
+
+  <CarouselPrevious />
+  <CarouselNext />
+</Carousel>
+
+  )
+}

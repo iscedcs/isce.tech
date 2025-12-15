@@ -24,7 +24,7 @@ export default function BlogSection({ showButton = true }) {
 
             {showButton && (
               <Link href="/blog">
-                <button className="block px-4 py-2 bg-gradient-to-r11111111111111111111111111111111111111111111111111111111111111 from-[#0086FF] to-[#B0D9FF] text-white text-sm rounded-lg">
+                <button className="block px-4 py-2 bg-gradient-to-r from-[#0086FF] to-[#B0D9FF] text-white text-sm rounded-lg">
                   View All Blog
                 </button>
               </Link>
@@ -98,10 +98,10 @@ export default function BlogSection({ showButton = true }) {
                   <div className="p-5">
                     {/* Category + Date */}
                     <div className="flex gap-10 items-center justify-left text-xs text-[#404040] mb-3">
-                      <span className=" text-[#325239] rounded-full text-[11px] font-medium">
+                      <span className=" text-[#325239] rounded-full text-[11px] font-medium whitespace-nowrap">
                         {item.post}
                       </span>
-                      <span>{item.date}</span>
+                      <span className="whitespace-nowrap">{item.date}</span>
                     </div>
 
                     {/* Title */}
@@ -110,7 +110,7 @@ export default function BlogSection({ showButton = true }) {
                     </h3>
 
                     {/* Button row */}
-                    <div className="absolute left-5 top-110 fflex justify-start items-center">
+                    <div className="absolute left-5 top-107 flex justify-start items-center">
                       <Link href={`/blog/${item.id}`}>
                         <button
                           aria-label="read more"

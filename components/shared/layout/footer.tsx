@@ -23,7 +23,7 @@ export default function FooterComponent() {
             <p className="mt-3 text-[13px] text-gray-300">
               Join the Ecosystem of the Future and Live the Future, Now.
             </p>
-            <button className="mt-6 px-6 py-2 bg-gradient-to-r from-[#0086FF] to-[#B0D9FF] rounded text-sm flex items-center gap-2 mx-auto">
+            <button className="mt-6 px-6 py-2 cursor-pointer bg-gradient-to-r from-[#0086FF] to-[#B0D9FF] rounded text-sm flex items-center gap-2 mx-auto">
               Free Consultation <span>›</span>
             </button>
           </div>
@@ -55,7 +55,7 @@ export default function FooterComponent() {
 
               {/* BUTTON */}
               <button
-                className="bg-gradient-to-r from-[#0086FF] to-[#B0D9FF] 
+                className="cursor-pointer bg-gradient-to-r from-[#0086FF] to-[#B0D9FF] 
         p-2 sm:p-1 lg:p-2 rounded text-sm sm:text-[12px]
         w-full  sm:w-30 lg:w-auto whitespace-nowrap"
               >
@@ -88,7 +88,7 @@ export default function FooterComponent() {
               <h4 className="text-white font-semibold mb-2 text-[8px]md:text-[12px] lg:text-[17px] xl:text-[20px]">
                 Services
               </h4>
-              <ul className="space-y-1">
+              <ul className="space-y-3">
                 <li className="text-[#8C8C8C]">Web Development</li>
                 <li className="text-[#8C8C8C]">Mobile Development</li>
                 <li className="text-[#8C8C8C]">Graphics Design</li>
@@ -101,7 +101,7 @@ export default function FooterComponent() {
               <h4 className="text-white font-semibold mb-2 text-[8px] md:text-[12px] lg:text-[17px] xl:text-[20px]">
                 Quick Link
               </h4>
-              <ul className="space-y-1">
+              <ul className="space-y-3">
                 <li className="text-[#8C8C8C]">About Company</li>
                 <li className="text-[#8C8C8C]">Need a Career</li>
                 <li className="text-[#8C8C8C]">Meet Our Team</li>

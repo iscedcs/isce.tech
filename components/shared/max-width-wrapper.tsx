@@ -5,7 +5,7 @@ export default function MaxWidthWrapper({
   children,
 }: IMaxWidthWrapper) {
   return (
-    <div className={cn("mx-auto max-w-7xl px-6 md:px-10", className)}>
+    <div className={cn("mx-auto max-w-7xl px-2 md:px-6", className)}>
       {/* Inner constrained column that actually limits the width */}
       <div className="">
         {children}

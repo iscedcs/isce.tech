@@ -16,10 +16,7 @@ export default function Future() {
 
         {/* TITLE */}
         <div className="relative text-center mt-4">
-          <h2 className="text-[38px] sm:text-4xl lg:text-[40px] xl:text-[50px] text-[#8C8C8C] font-semibold mb-0.5 z-15">
-            Step Into
-          </h2>
-          <div className="sm:hidden absolute w-full h-auto z-0">
+          <div className="sm:hidden absolute w-full h-auto -mt-[40] z-0">
             <svg
               viewBox="0 0 440 75"
               fill="none"
@@ -33,6 +30,9 @@ export default function Future() {
               />
             </svg>
           </div>
+          <h2 className="text-[38px] sm:text-4xl lg:text-[40px] xl:text-[50px] text-[#8C8C8C] font-semibold mb-0.5 z-15">
+            Step Into
+          </h2>
           <div className="hidden 2xl:hidden sm:block w-full h-auto absolute -mt-16 lg:-mt-20 xl:-mt-27 z-0 px-4 pl-8 md:px-10 md:pl-24 xl:px-20">
             <svg
               viewBox="0 0 1580 210"
@@ -56,7 +56,7 @@ export default function Future() {
         </div>
 
         {/* STEPS GRID */}
-        <div className="sm:hidden absolute w-full h-auto mt-20 z-0">
+        <div className="sm:hidden absolute w-82 h-auto mt-20 z-0">
           <svg
             viewBox="0 0 440 75"
             fill="none"
