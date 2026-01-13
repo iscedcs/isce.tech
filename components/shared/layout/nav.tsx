@@ -171,6 +171,7 @@ export default function NavComponent() {
                 { name: "Blog", path: "/blog" },
                 { name: "About", path: "/about" },
                 { name: "Contact", path: "/contact#contact" },
+                { name: "Product", path: "/product" }
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -226,6 +227,7 @@ export default function NavComponent() {
                 { name: "Blog", path: "/blog"},
                 { name: "About", path: "/about"},
                 { name: "Contact", path: "/contact#contact"},
+                { name: "Product", path: "/product" }
               ].map((item) => (
                 <Link
                   key={item.name}
