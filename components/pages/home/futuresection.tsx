@@ -6,7 +6,7 @@ export default function Future() {
       {/* TOP BADGE */}
       <MaxWidthWrapper>
         <div className="flex justify-center pt-10">
-          <div className="px-3 py-2 rounded-full border-2 border-[#404040]  text-xs xl:text-[18px] flex items-center gap-2 bg-gradient-to-r from-[#231942] to-[#7F3FBF] via-[#3842D1] bg-clip-text text-transparent">
+          <div className="px-3 py-2 rounded-full border-2 border-[#404040]  text-xs xl:text-[18px] flex items-center gap-2 bg-linear-to-r from-[#231942] to-[#7F3FBF] via-[#3842D1] bg-clip-text text-transparent">
             <span className="flex items-center justify-center w-2 h-2 xl:w-3 xl:h-3 ">
               <img src="/images/Vector.svg" />
             </span>{" "}
@@ -20,8 +20,7 @@ export default function Future() {
             <svg
               viewBox="0 0 440 75"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
                 stroke="#274058"
@@ -37,8 +36,7 @@ export default function Future() {
             <svg
               viewBox="0 0 1580 210"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
                 stroke="#274058"
@@ -60,8 +58,7 @@ export default function Future() {
           <svg
             viewBox="0 0 440 75"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0 39.8603C84.1131 -12.7554 132.33 -9.79671 220 39.8603C300.405 84.9779 348.995 84.4478 440 39.8603"
               stroke="#274058"
@@ -74,8 +71,7 @@ export default function Future() {
           <svg
             viewBox="0 0 1580 210"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.75 125C250.341 -19.2895 414.842 -58.8596 789.75 125C1177.5 242.346 1340.79 228.389 1578.75 125"
               stroke="#274058"
@@ -90,8 +86,7 @@ export default function Future() {
             height="2"
             viewBox="0 0 1488 2"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <line
               x1="8.74228e-08"
               y1="1"
@@ -109,8 +104,7 @@ export default function Future() {
               height="645"
               viewBox="0 0 2 924"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <line
                 x1="1"
                 y1="924"
@@ -145,9 +139,8 @@ export default function Future() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-gradient-to-b from-[#0E1A2A] to-[#0B131C] border border-[#2A3240] rounded-xl p-5 sm:p-3 shadow-lg z-10"
-            >
-              <p className="bg-gradient-to-b from-[#6A5BFF] to-[#18A6FF] bg-clip-text text-transparent font-bold text-[40px] sm:text-[17px] lg:text-[20px] xl:text-[25px]">
+              className="bg-linear-to-b from-[#0E1A2A] to-[#0B131C] border border-[#2A3240] rounded-xl p-5 sm:p-3 shadow-lg z-10">
+              <p className="bg-linear-to-b from-[#6A5BFF] to-[#18A6FF] bg-clip-text text-transparent font-bold text-[40px] sm:text-[17px] lg:text-[20px] xl:text-[25px]">
                 {item.num}
               </p>
               <p className="font-semibold text-[20px] mt-2 sm:text-[8px] lg:text-[14px] xl:text-[18px] text-[#E6EEF8]">
@@ -160,13 +153,13 @@ export default function Future() {
           ))}
         </div>
         {/* IMAGE + TEXT SECTION */}
-        <div className="mt-16 flex flex-col gap-10 md:gap-0 sm:flex-row items-stretch bg-gradient-to-r from-[#0E1622] to-[#0B111A]">
+        <div className="mt-16 flex flex-col gap-10 md:gap-0 sm:flex-row items-stretch bg-linear-to-r from-[#0E1622] to-[#0B111A]">
           {/* IMAGE LEFT (mobile goes bottom) */}
           <div className="w-full sm:w-3/4 h-full order-2 md:order-1">
             <img
               src="/images/team.jpg"
               alt="Team"
-              className="w-full h- object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
 
@@ -187,7 +180,7 @@ export default function Future() {
             {/* STATS */}
             <div className="flex gap-10 mt-8 sm:mt-4 items-center justify-center sm:justify-start">
               <div className="flex flex-col items-center">
-                <div className="relative md:text-[25px] border-[2px] border-[#FFFFFF] w-25 h-25 sm:w-19 sm:h-19 md:w-23 md:h-23 lg:h-29 lg:w-29 rounded-full flex justify-center items-center max-[250]:text-sm text-xl font-bold ">
+                <div className="relative md:text-[25px] border-2 border-[#FFFFFF] w-25 h-25 sm:w-19 sm:h-19 md:w-23 md:h-23 lg:h-29 lg:w-29 rounded-full flex justify-center items-center max-[250]:text-sm text-xl font-bold ">
                   <img
                     src="/images/Ellipse 25.svg"
                     className="absolute w-20 h-20  sm:w-15 sm:h-15 md:h-19 md:w-19 lg:h-25 lg:w-25"
@@ -196,14 +189,13 @@ export default function Future() {
                 </div>
                 <p
                   className="text-[14px] sm:text-[10px] md:text-[11
-                'px] lg:text-[15px] text-white mt-3 text-center sm:text-left"
-                >
+                'px] lg:text-[15px] text-white mt-3 text-center sm:text-left">
                   Business Growth
                 </p>
               </div>
 
               <div className="flex flex-col items-center">
-                <div className="relative md:text-[25px] border-[2px] border-[#FFFFFF] w-25 h-25 sm:w-19 sm:h-19 md:w-23 md:h-23 lg:w-29 lg:h-29 rounded-full flex justify-center items-center max-[250]:text-sm text-xl font-bold">
+                <div className="relative md:text-[25px] border-2 border-[#FFFFFF] w-25 h-25 sm:w-19 sm:h-19 md:w-23 md:h-23 lg:w-29 lg:h-29 rounded-full flex justify-center items-center max-[250]:text-sm text-xl font-bold">
                   <img
                     src="/images/Ellipse 25.svg"
                     className="absolute w-20 h-20 sm:w-15 sm:h-15 md:w-19 md:h-19 lg:w-25 lg:h-25"

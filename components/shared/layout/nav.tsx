@@ -139,7 +139,7 @@ export default function NavComponent() {
           </div>
         </div> */}
       </MaxWidthWrapper>
-      <nav className="navbar w-full bg-gradient-to-r from-[#0E1622] to-[#0B111A] text-white shadow-lg">
+      <nav className="navbar w-full bg-linear-to-r from-[#0E1622] to-[#0B111A] text-white shadow-lg">
         <MaxWidthWrapper>
           <div className="flex items-center justify-between py-4 md:py-5">
             {/* LEFT SIDE */}
@@ -163,15 +163,14 @@ export default function NavComponent() {
             <ul
               className="hidden sm:flex items-center 
         sm:gap-6 md:gap-10 lg:gap-15
-        text-[14px] lg:text-[15px] tracking-wide"
-            >
+        text-[14px] lg:text-[15px] tracking-wide">
               {[
                 { name: "Home", path: "/" },
                 { name: "Services", path: "/services" },
                 { name: "Blog", path: "/blog" },
                 { name: "About", path: "/about" },
                 { name: "Contact", path: "/contact#contact" },
-                { name: "Product", path: "/product" }
+                { name: "Product", path: "/product" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -188,8 +187,7 @@ export default function NavComponent() {
               after:transition-all
               after:duration-300
               hover:after:w-full
-            "
-                  >
+            ">
                     {item.name}
                   </Link>
                 </li>
@@ -199,8 +197,7 @@ export default function NavComponent() {
                 href="/contact"
                 className="border border-white text-white bg-[#242431] px-2 lg:px-4 py-2 
             rounded-md hover:bg-blue-500 transition duration-300 
-            text-sm lg:text-[15px] whitespace-nowrap"
-              >
+            text-sm lg:text-[15px] whitespace-nowrap">
                 Get in Touch
               </Link>
             </ul>
@@ -217,25 +214,23 @@ export default function NavComponent() {
           {open && (
             <div
               className="fixed inset-0 
-    z-50 sm:hidden overflow-hidden bg-gradient-to-r from-[#0E1622] to-[#0B111A] 
+    z-50 sm:hidden overflow-hidden bg-linear-to-r from-[#0E1622] to-[#0B111A] 
         p-10 
-         flex flex-col gap-4 shadow-xl"
-            >
+         flex flex-col gap-4 shadow-xl">
               {[
-                { name: "Home", path: "/"},
-                { name: "Services", path: "/services"},
-                { name: "Blog", path: "/blog"},
-                { name: "About", path: "/about"},
-                { name: "Contact", path: "/contact#contact"},
-                { name: "Product", path: "/product" }
+                { name: "Home", path: "/" },
+                { name: "Services", path: "/services" },
+                { name: "Blog", path: "/blog" },
+                { name: "About", path: "/about" },
+                { name: "Contact", path: "/contact#contact" },
+                { name: "Product", path: "/product" },
               ].map((item) => (
                 <Link
                   key={item.name}
                   href={item.path}
                   onClick={() => setOpen(false)}
                   className="bg-[#8e9397] text-[#222] py-3 px-4 rounded-md 
-              text-[14px] sm:text-[15px] tracking-wide font-medium"
-                >
+              text-[14px] sm:text-[15px] tracking-wide font-medium">
                   {item.name}
                 </Link>
               ))}
@@ -244,8 +239,7 @@ export default function NavComponent() {
                 href="/contact"
                 onClick={() => setOpen(false)}
                 className="bg-blue-600 text-black border border-white text-center py-4 rounded-md 
-            text-[14px] sm:text-[15px] tracking-wide mt-60"
-              >
+            text-[14px] sm:text-[15px] tracking-wide mt-60">
                 Get in Touch
               </Link>
             </div>

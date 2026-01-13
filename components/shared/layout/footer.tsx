@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,6 +10,7 @@ import {
 import React from "react";
 import MaxWidthWrapper from "../max-width-wrapper";
 import Link from "next/link";
+import { LeftIcon } from "@/lib/icons";
 export default function FooterComponent() {
   return (
     <footer className="bg-[#000000] text-white w-full">
@@ -18,15 +19,18 @@ export default function FooterComponent() {
         <div className="relative">
           <div className="justify-between">
             <div className="text-center py-16">
-              <h2 className="text-[35px] font-light">
+              <h2 className="text-2xl font-light">
                 Be Part of Something{" "}
                 <span className="font-semibold">Exclusive</span>
               </h2>
-              <p className="mt-3 text-[13px] text-gray-300">
+              <p className="mt-3 text-xs text-gray-300">
                 Join the Ecosystem of the Future and Live the Future, Now.
               </p>
-              <button className="mt-6 px-6 py-2 cursor-pointer bg-gradient-to-r from-[#0086FF] to-[#B0D9FF] rounded text-sm flex items-center gap-2 mx-auto">
-                Free Consultation <span>›</span>
+              <button className="mt-6 px-6 py-2 cursor-pointer bg-linear-to-r from-[#0086FF] to-[#B0D9FF] rounded text-sm flex items-center gap-2 mx-auto">
+                Free Consultation{" "}
+                <span>
+                  <LeftIcon className="w-3 h-3" />
+                </span>
               </button>
             </div>
           </div>
@@ -57,11 +61,13 @@ export default function FooterComponent() {
 
                 {/* BUTTON */}
                 <button
-                  className="cursor-pointer bg-gradient-to-r from-[#0086FF] to-[#B0D9FF] 
-        p-2 sm:p-1 lg:p-2 rounded text-sm sm:text-[12px]
-        w-full  sm:w-30 lg:w-auto whitespace-nowrap"
-                >
-                  Subscribe <span>›</span>
+                  className="cursor-pointer flex items-center justify-center gap-2 bg-linear-to-r from-[#0086FF] to-[#B0D9FF] 
+        rounded text-sm px-4 py-1 sm:text-[12px]
+        w-full  sm:w-30 lg:w-auto whitespace-nowrap">
+                  Subscribe{" "}
+                  <span>
+                    <LeftIcon className="w-2 h-2" />
+                  </span>
                 </button>
               </div>
             </div>
@@ -210,13 +216,11 @@ export default function FooterComponent() {
                     behavior: "smooth",
                   })
                 }
-                className="hidden sm:block items-center justify-center relative z-10 rounded-full w-5 h-5  lg:w-8 lg:h-8 mt-[-32] md:mt-[-34] lg:mt-[-38] bg-[#0065BF]  ml-[50%] border border-[#D9EDFF]"
-              >
+                className="hidden sm:block items-center justify-center relative z-10 rounded-full w-5 h-5  lg:w-8 lg:h-8 mt-[-32] md:mt-[-34] lg:mt-[-38] bg-[#0065BF]  ml-[50%] border border-[#D9EDFF]">
                 <img
                   src="/images/inverted.svg"
                   className="absolute top-[30%] left-[30%] w-2 h-2 lg:w-3 lg:h-3"
                 />
-
               </button>
               {/* inner wrapper: w-full on small screens so the three flex-1 children can fill the bar */}
               <div className="flex flex-row justify-center sm:justify-between items-center">
@@ -252,18 +256,24 @@ export default function FooterComponent() {
     xl:text-[15px] 
   "
                   />
-                  <FontAwesomeIcon icon={faTwitter} className="text-[#9c9696] sm:text-[8px]   
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    className="text-[#9c9696] sm:text-[8px]   
     md:text-[10px]   
-    lg:text-[12px] xl:text-[15px]" />
+    lg:text-[12px] xl:text-[15px]"
+                  />
                   <FontAwesomeIcon
                     icon={faLinkedinIn}
                     className="text-[#9c9696] sm:text-[8px]   
     md:text-[10px]   
     lg:text-[12px] xl:text-[15px]"
                   />
-                  <FontAwesomeIcon icon={faYoutube} className="text-[#9c9696] sm:text-[8px]   
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    className="text-[#9c9696] sm:text-[8px]   
     md:text-[10px]   
-    lg:text-[12px] xl:text-[15px]" />
+    lg:text-[12px] xl:text-[15px]"
+                  />
                 </div>
               </div>
             </div>

@@ -4,16 +4,16 @@ import { testimonials } from "@/lib/const";
 export default function Feedback() {
   return (
     <section className="bg-[#EBE8E1] py-8 text-[#1A1A1A]">
-        <MaxWidthWrapper>
+      <MaxWidthWrapper>
         <div className="">
           {/* TITLE */}
           <div className="px-4 md:px-20 text-center">
-            <div className="flex items-center justify-center gap-2 text-sm tracking-wide text-black">
+            <div className="flex items-center justify-center gap-2 text-xs tracking-wide text-black">
               <img src="/images/arrow.svg" alt="arrow" />
               CUSTOMER FEEDBACK
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-semibold mt-2">
+            <h2 className="text-lg md:text-xl font-semibold mt-2">
               80+ Customer <span className="font-normal">Choose Us</span>
             </h2>
           </div>
@@ -25,10 +25,9 @@ export default function Feedback() {
               {testimonials.concat(testimonials).map((item, i) => (
                 <div
                   key={i}
-                  className="relative bg-gradient-to-r from-[#0E1622] to-[#0B111A] 
+                  className="relative bg-linear-to-r from-[#0E1622] to-[#0B111A] 
                    border border-[#1F2937] rounded-xl pb-10 shadow-sm
-                   min-w-[360px]"
-                >
+                   min-w-[360px]">
                   {/* Avatar + Review */}
                   <div className="flex items-start gap-4 p-3 py-5">
                     <div className="w-20 h-20 bg-[#8C8C8C] rounded-full shrink-0"></div>
@@ -53,8 +52,7 @@ export default function Feedback() {
                         .map((_, index) => (
                           <span
                             key={index}
-                            className="text-[#325239] text-[12px]"
-                          >
+                            className="text-[#325239] text-[12px]">
                             ★
                           </span>
                         ))}
@@ -96,7 +94,7 @@ export default function Feedback() {
             </div>
           </div>
         </div>
-    </MaxWidthWrapper>
-      </section>
+      </MaxWidthWrapper>
+    </section>
   );
 }
