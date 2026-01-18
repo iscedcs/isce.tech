@@ -149,11 +149,11 @@
 
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-100%); }
 }
 
 .animate-scroll {
-  animation: scroll 3s linear infinite;
+  animation: scroll 12s linear infinite;
 }
 
 .animate-scroll:hover {
