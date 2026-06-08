@@ -7,7 +7,7 @@ export default function BoutCard() {
     <section>
       {" "}
       {/* Bottom Cards */}
-      <div className="w-full bg-[#F2F2F7] text-black py-5 px-10 xl:px-15">
+      <div className="w-full bg-[#F2F2F7] text-black px-10 xl:px-15 py-24">
         <MaxWidthWrapper>
           <div className="px-4 grid sm:grid-cols-3 gap-6">
             {/* Mission */}
@@ -15,8 +15,7 @@ export default function BoutCard() {
             {aboutCards.map((card) => (
               <div
                 key={card.id}
-                className="bg-white md:gap-4 shadow-md rounded-sm p-3 md:p-4 border border-[#0086FF]"
-              >
+                className="bg-white md:gap-4 shadow-md rounded-sm p-3 md:p-4 border border-[#0086FF]">
                 <div className="mb-2 lg:mb-4 flex flex-col gap-2 space-x-3">
                   <img
                     src={card.icon}
