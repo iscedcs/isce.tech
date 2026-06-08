@@ -5,7 +5,7 @@ import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 export default function ContactSection() {
   return (
     <section>
-      <div className="bg-[#07111F] py-10 sm:20 px-6 sm:px-12">
+      <div className="bg-[#07111F] min-h-[50svh] flex items-center justify-center py-24">
         <MaxWidthWrapper>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-3xl text-white mb-4">
@@ -22,7 +22,9 @@ export default function ContactSection() {
         <MaxWidthWrapper>
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10">
             {/* Left Contact Form */}
-            <div id="contact" className="bg-white rounded-2xl shadow-md p-6 sm:p-8 lg:p-10">
+            <div
+              id="contact"
+              className="bg-white rounded-2xl shadow-md p-6 sm:p-8 lg:p-10">
               <h2 className="text-xl sm:text-[10px] md:text-[20px] 2xl:text-[22px] font-semibold mb-6">
                 Contact US
               </h2>
@@ -71,15 +73,13 @@ export default function ContactSection() {
                   </label>
                   <textarea
                     placeholder="Type Here_ _"
-                    className="w-full border placeholder:text-[10px] sm:placeholder:text-[8px] md:placeholder:text-[12px] 2xl:placeholder:text-[15px] border-[#E5E5EA] rounded-md px-3 py-1 sm:py-0 lg:py-1 bg-[#CCCCCC] focus:outline-none"
-                  ></textarea>
+                    className="w-full border placeholder:text-[10px] sm:placeholder:text-[8px] md:placeholder:text-[12px] 2xl:placeholder:text-[15px] border-[#E5E5EA] rounded-md px-3 py-1 sm:py-0 lg:py-1 bg-[#CCCCCC] focus:outline-none"></textarea>
                 </div>
 
                 {/* Button */}
                 <button
                   type="submit"
-                  className="sm:text-[8px] md:text-[10px] lg:text-[13px] xl:text-[15px] 2xl:text-[20px] w-full border border-[#0086FF] text-[#0086FF] rounded-full py-2 sm:py-1 font-medium hover:bg-[#2A66F8] hover:text-white transition"
-                >
+                  className="sm:text-[8px] md:text-[10px] lg:text-[13px] xl:text-[15px] 2xl:text-[20px] w-full border border-[#0086FF] text-[#0086FF] rounded-full py-2 sm:py-1 font-medium hover:bg-[#2A66F8] hover:text-white transition">
                   Send Now
                 </button>
               </form>
@@ -178,7 +178,8 @@ export default function ContactSection() {
                       Our Office
                     </p>
                     <p className="text-[8px] sm:text-[6px] lg:text-[9px] text-center text-[#8C8C8C]">
-                      Plot 1, Maruwa Bus Stop, 128 Remi Olowude Street, Lekki, Lagos, Nigeria,
+                      Plot 1, Maruwa Bus Stop, 128 Remi Olowude Street, Lekki,
+                      Lagos, Nigeria,
                     </p>
                   </div>
                 </div>
