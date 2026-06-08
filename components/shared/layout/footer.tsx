@@ -110,19 +110,21 @@ export default function FooterComponent() {
                 <h4 className="text-white font-semibold mb-2 text-[8px] md:text-[12px] lg:text-[17px] xl:text-[20px]">
                   Quick Link
                 </h4>
-                <ul className="space-y-3">
-                  <Link href="/about">
-                    <li className="text-[#8C8C8C]">About Company</li>
-                  </Link>
+                <ul className="space-y-3 gap-3">
+                  <li className="text-[#8C8C8C]">
+                    <Link href="/about">About Company</Link>
+                  </li>
 
                   <li className="text-[#8C8C8C]">
                     <Link href="https://www.palmtechniq.com">
                       Need a Career
                     </Link>
                   </li>
-                  <li className="text-[#8C8C8C]">Meet Our Team</li>
-                  <li className="text-[#8C8C8C]">Clients Feedback</li>
-                  <li className="text-[#8C8C8C]">Contact Us</li>
+                  {/* <li className="text-[#8C8C8C]">Meet Our Team</li>
+                  <li className="text-[#8C8C8C]">Clients Feedback</li> */}
+                  <Link href="/contact">
+                    <li className="text-[#8C8C8C]">Contact Us</li>
+                  </Link>
                 </ul>
               </div>
             </div>
@@ -135,10 +137,14 @@ export default function FooterComponent() {
 
                   {/* Social Icons */}
                   <div className="flex absolute top-10 right-5 items-center gap-4 mt-12 pl-[70%] max-[380]:pl-0 text-gray-400">
-                    <FontAwesomeIcon
-                      icon={faFacebookF}
-                      className="text-[#2b2a2a]"
-                    />
+                    <Link
+                      href=" https://www.facebook.com/share/1JWQcLWNxw/?mibextid=wwXIfr"
+                      className="cursor-pointer">
+                      <FontAwesomeIcon
+                        icon={faFacebookF}
+                        className="text-[#2b2a2a]"
+                      />
+                    </Link>
                     <FontAwesomeIcon
                       icon={faTwitter}
                       className="text-[#9c9696]"
@@ -207,7 +213,7 @@ export default function FooterComponent() {
                       <span className="text-blue-500">
                         <img src="/images/phone.svg" />
                       </span>
-                      <p>+2349137206365</p>
+                      <p>+234 913 720 6365</p>
                     </li>
                   </ul>
                 </div>
@@ -254,34 +260,49 @@ export default function FooterComponent() {
                     Follow Us
                   </span>
                   <span className="h-0.5 w-7 bg-gray-200"></span>
-                  <FontAwesomeIcon
-                    icon={faFacebookF}
-                    className="text-[#2b2a2a]
+                  <Link
+                    href=" https://www.facebook.com/share/1JWQcLWNxw/?mibextid=wwXIfr"
+                    className="cursor-pointer">
+                    <FontAwesomeIcon
+                      icon={faFacebookF}
+                      className="text-[#2b2a2a]
      
     sm:text-[8px]   
     md:text-[10px]   
     lg:text-[12px]
     xl:text-[15px] 
   "
-                  />
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    className="text-[#9c9696] sm:text-[8px]   
+                    />
+                  </Link>
+
+                  <Link
+                    href="https://x.com/isceapp?s=21
+">
+                    <FontAwesomeIcon
+                      icon={faTwitter}
+                      className="text-[#9c9696] sm:text-[8px]   
     md:text-[10px]   
     lg:text-[12px] xl:text-[15px]"
-                  />
-                  <FontAwesomeIcon
-                    icon={faLinkedinIn}
-                    className="text-[#9c9696] sm:text-[8px]   
+                    />
+                  </Link>
+
+                  <Link href="https://www.linkedin.com/company/isceapp/">
+                    <FontAwesomeIcon
+                      icon={faLinkedinIn}
+                      className="text-[#9c9696] sm:text-[8px]   
     md:text-[10px]   
     lg:text-[12px] xl:text-[15px]"
-                  />
-                  <FontAwesomeIcon
-                    icon={faYoutube}
-                    className="text-[#9c9696] sm:text-[8px]   
+                    />
+                  </Link>
+
+                  <Link href="https://www.youtube.com/@isce-tech">
+                    <FontAwesomeIcon
+                      icon={faYoutube}
+                      className="text-[#9c9696] sm:text-[8px]   
     md:text-[10px]   
     lg:text-[12px] xl:text-[15px]"
-                  />
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
