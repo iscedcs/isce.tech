@@ -2,9 +2,9 @@ import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 
 export default function AboutUs() {
   return (
-    <section className="bg-[#07111F] py-24 px-6 sm:px-30 md:px-35 lg:px-40 xl:px-45">
+    <section className="bg-[#07111F] py-16 md:py-24 lg:py-32 ">
       <MaxWidthWrapper>
-        <div className="text-center text-[#D9D9D9] ">
+        <div className="text-center text-[#D9D9D9]">
           <h2 className="text-[30px] sm:text-[35px] md:text-[40px] xl:text-[45px] mb-4">
             About <span className="font-semibold">ISCE</span>
           </h2>

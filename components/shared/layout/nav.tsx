@@ -178,23 +178,26 @@ export default function NavComponent() {
             {/* LEFT SIDE */}
             <div className="flex items-center text-[12px] tracking-wide">
               {/* Desktop: ISCE */}
-              <img
-                className="hidden sm:block"
-                width="100"
-                height="40"
-                src="/images/isce.png"
-              />
-
+              <Link href="/" className="cursor-pointer">
+                <img
+                  className="hidden sm:block"
+                  width="100"
+                  height="40"
+                  src="/images/isce.png"
+                />
+              </Link>
               {/* Mobile: ISCE Digital */}
               <span className="flex  gap-1 sm:hidden">
-                <Image
-                  src="/images/isce_logo_standalone_white.png"
-                  width={100}
-                  height={100}
-                  alt=""
-                  quality={100}
-                  className="w-full h-10"
-                />
+                <Link href="/">
+                  <Image
+                    src="/images/isce_logo_standalone_white.png"
+                    width={100}
+                    height={100}
+                    alt=""
+                    quality={100}
+                    className="w-full h-10"
+                  />
+                </Link>
               </span>
             </div>
             {/* DESKTOP MENU */}
@@ -205,10 +208,10 @@ export default function NavComponent() {
               {[
                 { name: "Home", path: "/" },
                 { name: "Services", path: "/services" },
-                { name: "Blog", path: "/blog" },
+                // { name: "Blog", path: "/blog" },
                 { name: "About", path: "/about" },
                 { name: "Contact", path: "/contact#contact" },
-                { name: "Product", path: "/product" },
+                // { name: "Product", path: "/product" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link

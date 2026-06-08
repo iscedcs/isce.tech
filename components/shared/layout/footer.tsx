@@ -27,12 +27,12 @@ export default function FooterComponent() {
               <p className="mt-3 text-xs text-gray-300">
                 Join the Ecosystem of the Future and Live the Future, Now.
               </p>
-              <button className="mt-6 px-6 py-2 cursor-pointer bg-linear-to-r from-[#0086FF] to-[#B0D9FF] rounded text-sm flex items-center gap-2 mx-auto">
+              {/* <button className="mt-6 px-6 py-2 cursor-pointer bg-linear-to-r from-[#0086FF] to-[#B0D9FF] rounded text-sm flex items-center gap-2 mx-auto">
                 Free Consultation{" "}
                 <span>
                   <LeftIcon className="w-3 h-3" />
                 </span>
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -111,7 +111,10 @@ export default function FooterComponent() {
                   Quick Link
                 </h4>
                 <ul className="space-y-3">
-                  <li className="text-[#8C8C8C]">About Company</li>
+                  <Link href="/about">
+                    <li className="text-[#8C8C8C]">About Company</li>
+                  </Link>
+
                   <li className="text-[#8C8C8C]">
                     <Link href="https://www.palmtechniq.com">
                       Need a Career

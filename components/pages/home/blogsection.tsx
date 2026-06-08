@@ -23,14 +23,14 @@ export default function BlogSection({ showButton = true }) {
               </h2>
             </div>
 
-            {showButton && (
+            {/* {showButton && (
               <Link href="/blog">
                 <button className="flex items-center gap-2 justify-center px-4 py-2 bg-linear-to-r from-[#0086FF] to-[#B0D9FF] text-white text-sm rounded-lg">
                   View All Blog
                   <LeftIcon />
                 </button>
               </Link>
-            )}
+            )} */}
           </div>
           {showButton ? (
             <div className="overflow-hidden">
