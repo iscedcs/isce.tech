@@ -80,8 +80,8 @@ export default function FooterComponent() {
                 <h4 className="text-[#0065BF] text-[8px] md:text-[12px] lg:text-[17px] xl:text-[20px] font-semibold mb-2">
                   Address Business
                 </h4>
-                <p className="text-[#8C8C8C]">Amg workspace, Festac Town</p>
-                <p className="text-[#8C8C8C]">Lagos, Nigeria</p>
+                <p className="text-[#8C8C8C]">{`1st Floor, (Festac Tower) Chicken Republic Building,
+                        22Rd, Festac Town, Lagos, Nigeria`}</p>
 
                 <div className="mt-8">
                   <h4 className="text-[#0065BF] font-semibold mb-1 text-[10px] md:text-[12px] lg:text-[17px] xl:text-[20px]">
