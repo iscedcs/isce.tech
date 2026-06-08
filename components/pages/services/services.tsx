@@ -9,7 +9,7 @@ import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 export default function ServicesSection() {
   return (
     <section>
-      <div className="bg-[#07111F] py-24 px-6 md:px-12">
+      <div className="bg-[#07111F] min-h-[50svh] flex items-center justify-center py-24">
         <MaxWidthWrapper>
           <div className="text-center text-[#D9D9D9]">
             <h2 className="text-4xl md:text-5xl  mb-4 font-semibold">
@@ -22,7 +22,7 @@ export default function ServicesSection() {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="w-full bg-[#F2F2F7]">
+      <div className="w-full  bg-[#F2F2F7]">
         <MaxWidthWrapper>
           {allServices.map((service, index) => {
             const isReversed = index % 2 === 1; // alternate layout
@@ -36,7 +36,7 @@ export default function ServicesSection() {
                 viewport={{ once: true }}
                 className={`flex flex-col sm:flex-row ${
                   !isReversed ? "sm:flex-row-reverse" : ""
-                } sm:items-center gap-10 lg:gap-13  px-12  py-10 mx-auto`}>
+                } sm:items-center gap-10 lg:gap-13  px-12 space-x-6  py-10 mx-auto`}>
                 {/* IMAGE — always first on mobile */}
                 <div className="flex justify-center md:w-1/2 ">
                   <div className="rounded-2xl mx-[-20] sm:mx-[-10] lg:mx-[-30px]">
