@@ -159,7 +159,7 @@ export default function Future() {
             <img
               src="/images/team.jpg"
               alt="Team"
-              className="w-full h-full object-cover"
+              className="w-full h-fullrounded-[28px] object-cover"
             />
           </div>
 

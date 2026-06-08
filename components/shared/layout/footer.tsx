@@ -1,16 +1,17 @@
 "use client";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LeftIcon } from "@/lib/icons";
 import {
   faFacebookF,
-  faTwitter,
   faLinkedinIn,
+  faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MaxWidthWrapper from "../max-width-wrapper";
 import Link from "next/link";
-import { LeftIcon } from "@/lib/icons";
+
+const fullYear = new Date().getFullYear();
 export default function FooterComponent() {
   return (
     <footer className="bg-[#000000] text-white w-full">
@@ -86,8 +87,8 @@ export default function FooterComponent() {
                   <h4 className="text-[#0065BF] font-semibold mb-1 text-[10px] md:text-[12px] lg:text-[17px] xl:text-[20px]">
                     Contact Us
                   </h4>
-                  <p className="text-[#8C8C8C]">xxxxxxxxx@gmail.com</p>
-                  <p className="text-[#8C8C8C]">+234 xx xxx xxx</p>
+                  <p className="text-[#8C8C8C]">hello@isce.app</p>
+                  <p className="text-[#8C8C8C]">+2349137206365</p>
                 </div>
               </div>
 
@@ -111,7 +112,11 @@ export default function FooterComponent() {
                 </h4>
                 <ul className="space-y-3">
                   <li className="text-[#8C8C8C]">About Company</li>
-                  <li className="text-[#8C8C8C]">Need a Career</li>
+                  <li className="text-[#8C8C8C]">
+                    <Link href="https://www.palmtechniq.com">
+                      Need a Career
+                    </Link>
+                  </li>
                   <li className="text-[#8C8C8C]">Meet Our Team</li>
                   <li className="text-[#8C8C8C]">Clients Feedback</li>
                   <li className="text-[#8C8C8C]">Contact Us</li>
@@ -181,8 +186,8 @@ export default function FooterComponent() {
                         <img src="/images/location.svg" />
                       </span>
                       <p>
-                        Amg workspace, Festac Town <br />
-                        Lagos, Nigeria
+                        {`1st Floor, (Festac Tower) Chicken Republic Building,
+                        22Rd ,Festac Town, Lagos, Nigeria`}
                       </p>
                     </li>
 
@@ -191,7 +196,7 @@ export default function FooterComponent() {
                       <span className="text-blue-500">
                         <img src="/images/envelope.svg" />
                       </span>
-                      <p>xxxxxxxxxxx@gmail.com</p>
+                      <p>hello@isce.app</p>
                     </li>
 
                     {/* Phone */}
@@ -199,7 +204,7 @@ export default function FooterComponent() {
                       <span className="text-blue-500">
                         <img src="/images/phone.svg" />
                       </span>
-                      <p>+234 xx xxx xxx</p>
+                      <p>+2349137206365</p>
                     </li>
                   </ul>
                 </div>
@@ -280,7 +285,7 @@ export default function FooterComponent() {
           </div>
           <div className="text-center bg-black pb-10 sm:p-4">
             <p className="text-[12px] sm:text-sm">
-              Copyright © 2024 IISCE. All Right Reserved
+              Copyright ©{fullYear} ISCE. All Right Reserved
             </p>
           </div>
         </div>

@@ -3,7 +3,14 @@
 import MaxWidthWrapper from "../max-width-wrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import {
+  FacebookIcon,
+  LinkedinIcon,
+  Menu,
+  TwitterIcon,
+  X,
+  YoutubeIcon,
+} from "lucide-react";
 import Link from "next/link";
 import image from "next/image";
 
@@ -23,6 +30,7 @@ import {
   faWifi,
   faSignal,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function NavComponent() {
   const [open, setOpen] = useState(false);
@@ -34,7 +42,7 @@ export default function NavComponent() {
     function updateTime() {
       const now = new Date();
       setTime(
-        now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+        now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
       );
     }
     updateTime();
@@ -92,24 +100,49 @@ export default function NavComponent() {
   }
 
   return (
-    <header className="font-sans bg-white">
+    <header className="font-sans fixed z-50 w-full bg-white">
       <MaxWidthWrapper>
-        <div className="text-[#333] text-sm hidden sm:flex justify-between items-center px-16 py-3 md:px-32 lg:px-48">
+        <div className="text-[#333]  text-sm hidden sm:flex justify-between items-center px-16 py-3 md:px-32 lg:px-48">
           <div className="flex items-center gap-2">
             <FontAwesomeIcon
               icon={faEnvelopeOpen}
               className="white-fill-outline"
             />
-            <span>isceteams@gmail.com</span>
+            <span>hello@isce.tech</span>
           </div>
-
-          <div className="flex items-center gap-4">
-            <span className="text-[rgb(17,17,17)] font-medium">Follow Us</span>
-            <span className="h-0.5 w-7 bg-gray-200"></span>
-            <FontAwesomeIcon icon={faFacebookF} className="text-[#2b2a2a]" />
-            <FontAwesomeIcon icon={faTwitter} className="text-[#9c9696]" />
-            <FontAwesomeIcon icon={faLinkedinIn} className="text-[#9c9696]" />
-            <FontAwesomeIcon icon={faYoutube} className="text-[#9c9696]" />
+          <div className="flex items-center gap-2 sm:gap-4">
+            <span className="text-xs sm:text-sm font-medium">Follow Us</span>
+            <div className="flex gap-2 sm:gap-3">
+              <a
+                href="https://www.facebook.com/share/1JWQcLWNxw/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2b2a2a]">
+                <FacebookIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://x.com/isceapp?s=21"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#9c9696]
+">
+                <TwitterIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/isceapp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#9c9696]">
+                <LinkedinIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.youtube.com/@isce-tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#9c9696]">
+                <YoutubeIcon className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -154,9 +187,14 @@ export default function NavComponent() {
 
               {/* Mobile: ISCE Digital */}
               <span className="flex  gap-1 sm:hidden">
-                <div className="w-1 h-8 bg-white"></div>
-                <div className="w-1 h-8 bg-white"></div>
-                <span className="mt-3 ml-2">ISCE Digital</span>
+                <Image
+                  src="/images/isce_logo_standalone_white.png"
+                  width={100}
+                  height={100}
+                  alt=""
+                  quality={100}
+                  className="w-full h-10"
+                />
               </span>
             </div>
             {/* DESKTOP MENU */}
@@ -181,7 +219,7 @@ export default function NavComponent() {
               after:absolute
               after:left-0
               after:-bottom-1
-              after:h-[2px]
+after:h-0.5
               after:w-0
               after:bg-blue-500
               after:transition-all
