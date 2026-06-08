@@ -102,7 +102,7 @@ export default function NavComponent() {
   return (
     <header className="font-sans fixed z-50 w-full bg-white">
       <MaxWidthWrapper>
-        <div className="text-[#333]  text-sm hidden sm:flex justify-between items-center px-16 py-3 md:px-32 lg:px-48">
+        <div className="text-[#333]  text-sm hidden sm:flex justify-between items-center px-16 py-3 ">
           <div className="flex items-center gap-2">
             <FontAwesomeIcon
               icon={faEnvelopeOpen}
